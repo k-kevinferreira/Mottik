@@ -1,0 +1,141 @@
+:root {
+    --fundo-padrao: #4B5A61;
+    --bege: #C1B4A0;
+    --branco-puro: white;
+    --grafite: #2A3338;
+    --font-family: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo-padrao);
+    font-family: var(--font-family);
+    color: var(--bege);
+}
+ /* -----------topo----------- */
+header {
+    background-color: transparent;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container-topo {
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 20px;
+    color: var(--bege); 
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    display: inline-block; 
+    width: 36px; 
+    height: 36px; 
+    margin-right: 12px; 
+    transform: translateY(5px);
+    vertical-align: middle; 
+}
+
+.logo-icon img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 40px;
+}
+
+.main-nav a {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--bege);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--grafite);
+}
+
+/* -----------banner----------- */
+
+.banner {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: var(--fundo-padrao);
+}
+
+.banner h1 {
+    font-weight: 90;
+    font-size: 100px;
+    color: var(--bege);
+    margin-bottom: 20px;
+    letter-spacing: 15px;
+}
+
+.banner .tagline {
+    font-size: 15px;
+    font-weight: 250;
+    color: var(--bege);
+    margin-bottom: 40px;
+}
+
+/* -----------botão----------- */
+
+.btn-solicitar {
+    display: inline-block;
+    background-color: var(--bege);
+    color: var(--fundo-padrao);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 350;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-solicitar:hover {
+    background-color: var(--grafite);
+    color: var(--bege);
+}
+
+/* -----------scroll----------- */
+
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid var(--bege);
+    border-right: 2px solid var(--bege);
+    animation: bounce 2s infinite;
+}
