@@ -88,7 +88,7 @@ header {
     flex-direction: column;
     text-align: center;
     position: relative;
-    padding-bottom: 50px;
+    padding-top: 70px;
     background-color: var(--fundo-padrao);
 }
 
@@ -104,7 +104,7 @@ header {
     font-size: 15px;
     font-weight: 250;
     color: var(--bege);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /* -----------botão----------- */
@@ -123,7 +123,10 @@ header {
 }
 
 .btn-solicitar:hover {
-    background-color: var(--grafite);
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     background-color: var(--grafite);
     color: var(--bege);
 }
 
@@ -441,11 +444,13 @@ header {
     filter: brightness(1.1);
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     background-color: var(--grafite);
+    color: var(--bege);
 }
 
 .contato-mapa {
     width: 100%;
-    height: 450px;
+    height: 350px;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -457,30 +462,67 @@ header {
     
 }
 
+/* -----------footer-----------
+--------------------------------- */
+
 .rodape-final {
-    background-color: var(--grafite);
-    padding: 30px 20px;
-    font-family: var(--font-family);
+  background-color: var(--grafite);
+  padding: 30px 20px;
+  font-family: var(--font-family);
 }
 
 .rodape-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.rodape-logo img {
-    height: 25px;
-    opacity: 0.7;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .rodape-copyright p {
-    font-size: 13px;
-    margin: 0;
-    color: var(--bege);
-    opacity: 0.8;
+  font-size: 13px;
+  margin: 0;
+  color: var(--bege);
+  opacity: 0.8;
+}
+
+.logo-rodape {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  gap: 8px;
+  color: #ffffff;
+}
+
+.logo-rodape .logo-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-rodape .logo-icon img {
+  width: 32px;
+  height: 32px;
+  transform: translateY(4px);
+}
+
+.logo-rodape:hover {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.link-desenvolvedor {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.link-desenvolvedor:hover {
+  color: #cccccc;
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {
@@ -531,4 +573,28 @@ header {
         gap: 20px;
         text-align: center;
     }
+}
+
+/* -----------Modal----------- */
+.btn-mottik-enviar {
+  background-color: #222;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-mottik-enviar:hover {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.btn-mottik-enviar:focus {
+  box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.5);
+}
+
+.modal-footer .btn-secondary {
+  padding: 10px 20px;
+  font-weight: 500;
 }

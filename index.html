@@ -28,9 +28,9 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,15 +42,16 @@
             <p class="tagline">Design de mobiliário sob medida de alto padrão.<br>Luxo discreto e precisão
                 artesanal.</p>
 
-            <a href="#" class="btn-solicitar">Solicite Orçamento</a>
+            <a href="#" class="btn-solicitar" data-bs-toggle="modal" data-bs-target="#modalOrcamento">Solicite
+                Orçamento</a>
         </div>
         <div class="scroll-down-arrow"></div>
 
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <h2>Portfólio</h2>
             <p>Projetos sob medidas que unem funcionalidade e estética contemporânea</p>
 
-            <div class="img-projetos">
+            <div class="img-projetos" id="img-projetos">
                 <img src="/src/assets/Portfólio/ambiente 1.jpg" alt="">
                 <img src="/src/assets/Portfólio/ambiente 2.png" alt="">
                 <img src="/src/assets/Portfólio/ambiente 3.png" alt="">
@@ -61,7 +62,7 @@
         </div>
 
         <section class="servicos">
-            <div class="servicos-container">
+            <div class="servicos-container" id="servicos">
                 <h2>Serviços</h2>
                 <div class="linha"></div>
 
@@ -105,61 +106,122 @@
             </div>
         </section>
 
-        <section class="contato-secao">
-    <div class="contato-container">
+        <section class="contato-secao" id="contato">
+            <div class="contato-container">
 
-        <div class="contato-info">
-            <h2>Contato</h2>
-            <p class="subtitulo">
-                Entre em contato e descubra como podemos transformar seus ambientes com design sob medida.
-            </p>
+                <div class="contato-info">
+                    <h2>Contato</h2>
+                    <p class="subtitulo">
+                        Entre em contato e descubra como podemos transformar seus ambientes com design sob medida.
+                    </p>
 
-            <div class="contato-grid">
-                <div class="info-box">
-                    <h3>Dabney Vinhal</h3>
-                    <p>Especialista em Armários e Planejados</p>
-                    <span>(61) 99923-2767</span>
+                    <div class="contato-grid">
+                        <div class="info-box">
+                            <h3>Dabney Vinhal</h3>
+                            <p>Especialista em Armários e Planejados</p>
+                            <span>(61) 99923-2767</span>
+                        </div>
+                        <div class="info-box">
+                            <h3>Ivonildo Vinhal</h3>
+                            <p>Especialista em Armários e Planejados</p>
+                            <span>(61) 99876-5432</span>
+                            <span>comercial@mottik.com.br</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-orcamento" data-bs-toggle="modal" data-bs-target="#modalOrcamento">Solicite
+                        seu Orçamento</a>
                 </div>
-                <div class="info-box">
-                    <h3>Ivonildo Vinhal</h3>
-                    <p>Especialista em Armários e Planejados</p>
-                    <span>(61) 99876-5432</span>
-                    <span>comercial@mottik.com.br</span>
+
+                <div class="contato-mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.020585638108!2d-47.929229!3d-15.780148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d1bdf673aa3%3A0x6301b0a73de5d414!2sCongresso%20Nacional!5e0!3m2!1spt-BR!2sbr!4v1674241069724!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
+
             </div>
+        </section>
 
-            <a href="#" class="btn-orcamento">Solicite seu Orçamento</a>
-        </div>
+        <footer class="rodape-final">
+            <div class="rodape-container">
 
-        <div class="contato-mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.020585638108!2d-47.929229!3d-15.780148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d1bdf673aa3%3A0x6301b0a73de5d414!2sCongresso%20Nacional!5e0!3m2!1spt-BR!2sbr!4v1674241069724!5m2!1spt-BR!2sbr"
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
+                <a href="#" class="logo-rodape">
+                    <span class="logo-icon">
+                        <img src="/src/assets/Logo/fita-metrica3.png" alt="Ícone Fita Métrica Mottik">
+                    </span>
+                </a>
 
-    </div>
-</section>
+                <div class="rodape-copyright">
+                    <p>
+                        © 2025 Mottik Design Mobiliário. Todos os direitos reservados.
+                        <br> Desenvolvido por <a href="https://github.com/k-kevinferreira" target="_blank"
+                            rel="noopener noreferrer" class="link-desenvolvedor">Kevin Ferreira</a>
+                    </p>
+                </div>
 
-<footer class="rodape-final">
-    <div class="rodape-container">
-        <div class="rodape-logo">
-            <img src="img/logo-mottik-branca.svg" alt="Mottik Design Mobiliário">
-        </div>
-        <div class="rodape-copyright">
-            <p>© 2025 Mottik Design Mobiliário. Todos os direitos reservados.</p>
-        </div>
-    </div>
-</footer>
-
+            </div>
+        </footer>
     </main>
 
+    <div class="modal fade" id="modalOrcamento" tabindex="-1" aria-labelledby="modalOrcamentoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalOrcamentoLabel">Solicitar Orçamento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
 
+                    <form id="form-orcamento">
+
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome Completo:</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone/WhatsApp:</label>
+                            <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="servico" class="form-label">Qual serviço você tem interesse?</label>
+                            <select class="form-select" id="servico">
+                                <option selected disabled>Selecione um serviço...</option>
+                                <option value="Armarios Planejados">Armários Planejados</option>
+                                <option value="Cozinhas Sob Medida">Cozinhas Sob Medida</option>
+                                <option value="Closets & Roupeiros">Closets & Roupeiros</option>
+                                <option value="Home Offices">Home Offices</option>
+                                <option value="Estantes & Bibliotecas">Estantes & Bibliotecas</option>
+                                <option value="Design Corporativo">Design Corporativo</option>
+                                <option value="Outro">Outro (especificar abaixo)</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Descreva seu projeto:</label>
+                            <textarea class="form-control" id="mensagem" rows="3"
+                                placeholder="Ex: Preciso de um armário para um quarto de casal de 3m x 4m..."></textarea>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="form-orcamento" class="btn btn-mottik-enviar">Enviar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
