@@ -150,7 +150,7 @@ header {
     background-color: var(--branco-puro);
     color: var(--grafite);
     width: 100%;
-    padding: 40px;
+    padding: 110px;
     /* padding: 40px 20px 60px 20px; */
     font-family: var(--font-family);
 }
@@ -700,3 +700,4 @@ header {
   padding: 10px 20px;
   font-weight: 500;
 }
+
