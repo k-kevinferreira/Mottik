@@ -139,6 +139,3 @@ O deploy foi realizado via **Vercel**, garantindo:
 
 **Kevin Ferreira**  
 GitHub: https://github.com/k-kevinferreira  
-
-Para visualizar o site basta acessar:
-
