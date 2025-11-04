@@ -144,6 +144,104 @@ header {
     animation: bounce 2s infinite;
 }
 
+/* -----------sobre----------- */
+
+.sobre {
+    background-color: var(--branco-puro);
+    color: var(--grafite);
+    width: 100%;
+    padding: 40px;
+    /* padding: 40px 20px 60px 20px; */
+    font-family: var(--font-family);
+}
+
+.sobre-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--grafite);
+    letter-spacing: 1.5px;
+}
+
+.sobre p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: var(--grafite);
+    text-align: justify;
+}
+
+/* -----------Responsividade Sobre----------- */
+
+@media (max-width: 992px) {
+    .sobre {
+        padding: 60px 20px;
+    }
+
+    .sobre h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .sobre p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .sobre-frase-final {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        padding: 50px 18px;
+    }
+
+    .sobre h2 {
+        font-size: 32px;
+    }
+
+    .sobre p {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+
+    .sobre-frase-final {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre {
+        padding: 40px 15px;
+    }
+
+    .sobre h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .sobre p {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .sobre-frase-final {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+}
+
+
+
+
 /* -----------portfólio----------- 
 ---------------------------------*/
 
@@ -320,6 +418,8 @@ header {
     color: #555;
     line-height: 1.5;
 }
+
+/* -----------Responsividade para o Serviços----------- */
 
 @media (max-width: 992px) {
     .servicos-grid {
@@ -524,6 +624,8 @@ header {
   color: #cccccc;
   text-decoration: none;
 }
+
+/* responsividade contato */
 
 @media (max-width: 992px) {
     .contato-container {
