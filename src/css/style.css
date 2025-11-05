@@ -701,3 +701,11 @@ header {
   font-weight: 500;
 }
 
+
+
+/* ------------modal carrousel--------- 
+---------------------------------------*/
+#lightbox-carousel {
+    
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}

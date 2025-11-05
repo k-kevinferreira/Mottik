@@ -5,23 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOTTIK - Design de Mobiliário</title>
-   <link rel="shortcut icon" href="/src/assets/Logo/logo.ico.png" sizes="32x32"> 
+    <link rel="shortcut icon" href="/src/assets/Logo/logo.ico.png" sizes="32x32">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mottik-fundo': '#4B5A61',
+                        'mottik-bege': '#C1B4A0',
+                        'mottik-grafite': '#2A3338',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="/src/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Oswald:wght@400&family=Orbitron&family=Poppins&family=Raleway&family=Roboto&family=Roboto+Serif&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
-    
-<!-- -------topo ----------- 
+
+    <!-- -------topo ----------- 
 ---------------------------->
 
     <header>
@@ -40,7 +59,7 @@
         </div>
     </header>
 
-<!-- -------banner ----------- 
+    <!-- -------banner ----------- 
 -------------------------->
 
     <main>
@@ -54,65 +73,110 @@
         </div>
         <div class="scroll-down-arrow" id="scrollArrow"></div>
 
-<!-- -------sobre -----------
+        <!-- -------sobre -----------
 ---------------------------->
 
-<div class="sobre" id="sobre">
-    <div class="sobre-container">
-        <h2>Nossa História</h2>
-        <p>
-            A história da MOTTIK começa muito antes de se tornar uma marcenaria de alto padrão.
-            No início dos anos 2000, nasceu o primeiro contato com a marcenaria — um ofício que despertou paixão,
-            mas que ainda não era o momento certo para ser seguido como profissão. A vida tomou outros rumos, e após
-            anos de estudo e dedicação, veio a aprovação no concurso no DF, onde uma longa trajetória foi construída
-            até a aposentadoria.
-        </p>
+        <div class="sobre" id="sobre">
+            <div class="sobre-container">
+                <h2>Nossa História</h2>
+                <p>
+                    A história da MOTTIK começa muito antes de se tornar uma marcenaria de alto padrão.
+                    No início dos anos 2000, nasceu o primeiro contato com a marcenaria — um ofício que despertou
+                    paixão,
+                    mas que ainda não era o momento certo para ser seguido como profissão. A vida tomou outros rumos, e
+                    após
+                    anos de estudo e dedicação, veio a aprovação no concurso no DF, onde uma longa trajetória foi
+                    construída
+                    até a aposentadoria.
+                </p>
 
-        <p>
-            Mesmo sem atuar profissionalmente na área naquele período, a marcenaria nunca deixou de existir.
-            Ganhou forma nos móveis feitos para a própria casa, depois para familiares, amigos e pessoas próximas da
-            igreja. Cada peça era um lembrete silencioso de que aquele talento tinha futuro.
-        </p>
+                <p>
+                    Mesmo sem atuar profissionalmente na área naquele período, a marcenaria nunca deixou de existir.
+                    Ganhou forma nos móveis feitos para a própria casa, depois para familiares, amigos e pessoas
+                    próximas da
+                    igreja. Cada peça era um lembrete silencioso de que aquele talento tinha futuro.
+                </p>
 
-        <p>
-            Com o tempo, a história ganhou um novo capítulo: o filho, jovem e cheio de energia,
-            não se encontrava no tradicional caminho CLT. A combinação perfeita então surgiu — de um lado, a experiência,
-            maturidade e técnica de décadas; do outro, juventude, visão moderna e força de vontade para transformar
-            habilidade em negócio.
-        </p>
+                <p>
+                    Com o tempo, a história ganhou um novo capítulo: o filho, jovem e cheio de energia,
+                    não se encontrava no tradicional caminho CLT. A combinação perfeita então surgiu — de um lado, a
+                    experiência,
+                    maturidade e técnica de décadas; do outro, juventude, visão moderna e força de vontade para
+                    transformar
+                    habilidade em negócio.
+                </p>
 
-        <p>
-            Assim nasceu a <strong>MOTTIK</strong>, uma empresa familiar construída sobre propósito, detalhismo e
-            paixão por criar espaços únicos. Hoje, somos especializados em
-            <strong>design de mobiliário sob medida de alto padrão</strong>, unindo luxo discreto,
-            precisão artesanal e soluções personalizadas para cada projeto.
-        </p>
+                <p>
+                    Assim nasceu a <strong>MOTTIK</strong>, uma empresa familiar construída sobre propósito, detalhismo
+                    e
+                    paixão por criar espaços únicos. Hoje, somos especializados em
+                    <strong>design de mobiliário sob medida de alto padrão</strong>, unindo luxo discreto,
+                    precisão artesanal e soluções personalizadas para cada projeto.
+                </p>
 
-    </div>
-
-</div>
-
-
-
-
-<!-- -------portfólio ----------- 
--------------------------->
-
-        <div class="portfolio" id="portfolio">
-            <h2>Portfólio</h2>
-            <p>Projetos sob medidas que unem funcionalidade e estética contemporânea</p>
-
-            <div class="img-projetos" id="img-projetos">
-                <img src="/src/assets/Portfólio/ambiente 1.jpg" alt="">
-                <img src="/src/assets/Portfólio/ambiente 2.png" alt="">
-                <img src="/src/assets/Portfólio/ambiente 3.png" alt="">
-                <img src="/src/assets/Portfólio/ambiente 4.png" alt="">
-                <img src="/src/assets/Portfólio/ambiente 5.png" alt="">
-                <img src="/src/assets/Portfólio/ambiente 7.png" alt="">
             </div>
+
         </div>
 
- <!-- -------serviços ----------- 
+
+
+
+        <!-- -------portfólio ----------- 
+-------------------------->
+
+        <div id="portfolio" class="py-20 px-4 text-center max-w-7xl mx-auto">
+
+            <h2 class="text-5xl font-thin text-mottik-bege mb-4 tracking-widest">Portfólio</h2>
+            <p class="text-base text-mottik-bege mb-16">Projetos sob medidas que unem funcionalidade e estética
+                contemporânea</p>
+
+            <div id="img-projetos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                <button
+                    class="group relative overflow-hidden block w-full h-72 rounded-xl shadow-xl hover:shadow-2xl transition duration-300"
+                    data-lightbox-index="0" onclick="openLightbox(0)">
+                    <img src="/src/assets/Portfólio/ambiente 1.jpg" alt="Detalhe de ambiente planejado 1"
+                        class="w-full h-full object-cover transition duration-300 transform group-hover:scale-105">
+                </button>
+
+                <button
+                    class="group relative overflow-hidden block w-full h-72 rounded-xl shadow-xl hover:shadow-2xl transition duration-300"
+                    data-lightbox-index="1" onclick="openLightbox(1)">
+                    <img src="/src/assets/Portfólio/ambiente 2.png" alt="Detalhe de ambiente planejado 2"
+                        class="w-full h-full object-cover transition duration-300 transform group-hover:scale-105">
+                </button>
+
+                <button
+                    class="group relative overflow-hidden block w-full h-72 rounded-xl shadow-xl hover:shadow-2xl transition duration-300"
+                    data-lightbox-index="2" onclick="openLightbox(2)">
+                    <img src="/src/assets/Portfólio/ambiente 3.png" alt="Detalhe de ambiente planejado 3"
+                        class="w-full h-full object-cover transition duration-300 transform group-hover:scale-105">
+                </button>
+
+                <button
+                    class="group relative overflow-hidden block w-full h-72 rounded-xl shadow-xl hover:shadow-2xl transition duration-300"
+                    data-lightbox-index="3" onclick="openLightbox(3)">
+                    <img src="/src/assets/Portfólio/ambiente 4.png" alt="Detalhe de ambiente planejado 4"
+                        class="w-full h-full object-cover transition duration-300 transform group-hover:scale-105">
+                </button>
+
+                <button
+                    class="group relative overflow-hidden block w-full h-72 rounded-xl shadow-xl hover:shadow-2xl transition duration-300"
+                    data-lightbox-index="4" onclick="openLightbox(4)">
+                    <img src="/src/assets/Portfólio/ambiente 5.png" alt="Detalhe de ambiente planejado 5"
+                        class="w-full h-full object-cover transition duration-300 transform group-hover:scale-105">
+                </button>
+
+                <button
+                    class="group relative overflow-hidden block w-full h-72 rounded-xl shadow-xl hover:shadow-2xl transition duration-300"
+                    data-lightbox-index="5" onclick="openLightbox(5)">
+                    <img src="/src/assets/Portfólio/ambiente 7.png" alt="Detalhe de ambiente planejado 6"
+                        class="w-full h-full object-cover transition duration-300 transform group-hover:scale-105">
+                </button>
+
+            </div>
+        </div>
+        <!-- -------serviços ----------- 
   ------------------------------->
 
         <section class="servicos">
@@ -160,7 +224,7 @@
             </div>
         </section>
 
- <!-- -------contato ----------- 
+        <!-- -------contato ----------- 
   ------------------------------>
 
         <section class="contato-secao" id="contato">
@@ -201,7 +265,7 @@
             </div>
         </section>
 
-<!-- -------footer ----------- 
+        <!-- -------footer ----------- 
 ------------------------------>
 
         <footer class="rodape-final">
@@ -225,77 +289,117 @@
         </footer>
     </main>
 
-<!-- -------modal do btn orçamento ----------- 
+    <!-- -------modal do btn orçamento ----------- 
 ---------------------------------------------->
 
-    <div class="modal fade" id="modalOrcamento" tabindex="-1" aria-labelledby="modalOrcamentoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalOrcamentoLabel">Solicitar Orçamento</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+  <div class="modal fade" id="modalOrcamento" tabindex="-1" aria-labelledby="modalOrcamentoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalOrcamentoLabel">Solicitar Orçamento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
 
-                    <form id="form-orcamento">
+                <form id="form-orcamento"> 
 
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome Completo:</label>
-                            <input type="text" class="form-control" id="nome" required>
-                        </div>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome Completo:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
 
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-mail:</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
 
-                        <div class="mb-3">
-                            <label for="telefone" class="form-label">Telefone/WhatsApp:</label>
-                            <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
-                        </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone/WhatsApp:</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
 
-                        <div class="mb-3">
-                            <label for="servico" class="form-label">Qual serviço você tem interesse?</label>
-                            <select class="form-select" id="servico">
-                                <option selected disabled>Selecione um serviço...</option>
-                                <option value="Armarios Planejados">Armários Planejados</option>
-                                <option value="Cozinhas Sob Medida">Cozinhas Sob Medida</option>
-                                <option value="Closets & Roupeiros">Closets & Roupeiros</option>
-                                <option value="Home Offices">Home Offices</option>
-                                <option value="Estantes & Bibliotecas">Estantes & Bibliotecas</option>
-                                <option value="Design Corporativo">Design Corporativo</option>
-                                <option value="Outro">Outro (especificar abaixo)</option>
-                            </select>
-                        </div>
+                    <div class="mb-3">
+                        <label for="servico" class="form-label">Qual serviço você tem interesse?</label>
+                        <select class="form-select" id="servico" name="servico">
+                            <option selected disabled>Selecione um serviço...</option>
+                            <option value="Armarios Planejados">Armários Planejados</option>
+                            <option value="Cozinhas Sob Medida">Cozinhas Sob Medida</option>
+                            <option value="Closets & Roupeiros">Closets & Roupeiros</option>
+                            <option value="Home Offices">Home Offices</option>
+                            <option value="Estantes & Bibliotecas">Estantes & Bibliotecas</option>
+                            <option value="Design Corporativo">Design Corporativo</option>
+                            <option value="Outro">Outro (especificar abaixo)</option>
+                        </select>
+                    </div>
 
-                        <div class="mb-3">
-                            <label for="mensagem" class="form-label">Descreva seu projeto:</label>
-                            <textarea class="form-control" id="mensagem" rows="3"
-                                placeholder="Ex: Preciso de um armário para um quarto de casal de 3m x 4m..."></textarea>
-                        </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Descreva seu projeto:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="3"
+                            placeholder="Ex: Preciso de um armário para um quarto de casal de 3m x 4m..."></textarea>
+                    </div>
 
-                    </form>
+                </form>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" form="form-orcamento" class="btn btn-mottik-enviar">Enviar Pedido</button>
-                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" form="form-orcamento" class="btn btn-mottik-enviar">Enviar Pedido</button>
             </div>
         </div>
     </div>
+</div>
+
+    <!-- modal portfolio -->
+
+    <div id="lightbox-carousel"
+        class="fixed inset-0 bg-black bg-opacity-95 z-[9999] hidden transition-opacity duration-300"
+        onclick="closeLightbox(event)">
+        <div class="relative w-full h-full flex items-center justify-center p-4">
+
+            <div class="max-w-6xl w-full h-full flex items-center justify-center" onclick="event.stopPropagation()">
+                <img id="lightbox-main-img" src="" alt="Imagem Ampliada"
+                    class="max-h-[90vh] w-auto mx-auto object-contain shadow-2xl rounded-xl">
+            </div>
+
+            <button id="lightbox-close-btn"
+                class="absolute top-4 right-4 text-mottik-bege text-5xl leading-none font-light hover:text-white transition-colors"
+                onclick="closeLightbox()">
+                &times;
+            </button>
+
+            <button id="lightbox-prev-btn"
+                class="absolute left-4 top-1/2 -translate-y-1/2 bg-mottik-grafite text-mottik-bege p-3 rounded-full hover:bg-mottik-fundo transition-colors z-50 shadow-lg"
+                onclick="navigateLightbox(-1, event)">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+
+            <button id="lightbox-next-btn"
+                class="absolute right-4 top-1/2 -translate-y-1/2 bg-mottik-grafite text-mottik-bege p-3 rounded-full hover:bg-mottik-fundo transition-colors z-50 shadow-lg"
+                onclick="navigateLightbox(1, event)">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
     <Script src="/src/js/script.js"></Script>
-    
 
 
 
-        
+
+
 </body>
 
 </html>
