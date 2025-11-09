@@ -92,3 +92,26 @@ if (lightbox && mainImage) {
 
 } else {
 }
+
+
+// Responsividade mobile 
+
+const menuToggle = document.getElementById("menuToggle");
+const mobileNav = document.getElementById("mobileNav");
+const closeMenu = document.getElementById("closeMenu");
+
+menuToggle.addEventListener("click", () => {
+    mobileNav.classList.add("open");
+});
+
+closeMenu.addEventListener("click", () => {
+    mobileNav.classList.remove("open");
+});
+
+// Fecha o menu ao clicar em um link
+document.querySelectorAll(".mobile-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileNav.classList.remove("open");
+    });
+});
+

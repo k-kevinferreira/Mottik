@@ -709,3 +709,109 @@ header {
     
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
+
+
+/* Reponsividade mobile */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 34px;
+    color: var(--bege);
+    cursor: pointer;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100vh;
+    background-color: var(--grafite);
+    padding: 60px 20px;
+    transition: 0.4s;
+    z-index: 4000;
+}
+
+.mobile-nav.open {
+    right: 0;
+}
+
+.close-menu {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: var(--bege);
+}
+
+.mobile-nav ul {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.mobile-nav li {
+    margin: 25px 0;
+}
+
+.mobile-nav a {
+    color: var(--bege);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* responsivo */
+
+@media (max-width: 850px) {
+
+    .container-topo {
+        padding: 0 24px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: none !important;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+        align-items: center;
+        position: relative;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    .sobre {
+        padding: 40px 15px;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rodape-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
