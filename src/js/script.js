@@ -1,6 +1,5 @@
 
-/* -----------------------------------------------------------------
-    SCROLL para a próxima seção banner
+/* ------------ SCROLL para a próxima seção banner-------------------
    ----------------------------------------------------------------- */
 document.addEventListener("DOMContentLoaded", function() {
     const scrollArrow = document.getElementById("scrollArrow");
@@ -18,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/* -----------------------------------------------------------------
-    Logica de Navegação do Portfólio
+/* -------------Logica de Navegação do Portfólio-----------------------
    ----------------------------------------------------------------- */
 
 const portfolioImages = [
@@ -77,7 +75,9 @@ if (lightbox && mainImage) {
         updateLightboxImage();
     }
 
-    // Navegação via teclado
+    // ------------Navegação via teclado----------------
+    //------------------------------------------------// 
+
     document.addEventListener('keydown', function(e) {
         if (lightbox.classList.contains('hidden')) return;
 
@@ -94,7 +94,8 @@ if (lightbox && mainImage) {
 }
 
 
-// Responsividade mobile 
+// -----------Responsividade mobile------------
+//----------------------------------------------// 
 
 const menuToggle = document.getElementById("menuToggle");
 const mobileNav = document.getElementById("mobileNav");
