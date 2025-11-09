@@ -815,3 +815,40 @@ header {
         gap: 20px;
     }
 }
+
+@media (max-width: 850px) {
+    .banner h1 {
+        font-size: 58px;
+        letter-spacing: 10px;
+        margin-bottom: 15px;
+    }
+
+    .banner .tagline {
+        font-size: 13px;
+        margin-bottom: 35px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner h1 {
+        font-size: 48px;
+        letter-spacing: 8px;
+    }
+
+    .banner .tagline {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 430px) {
+    .banner h1 {
+        font-size: 40px;
+        letter-spacing: 6px;
+    }
+
+    .banner .tagline {
+        font-size: 11px;
+        margin-bottom: 30px;
+    }
+}
