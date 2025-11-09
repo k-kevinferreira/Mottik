@@ -832,7 +832,7 @@ header {
 
 @media (max-width: 600px) {
     .banner h1 {
-        font-size: 48px;
+        font-size: 80px;
         letter-spacing: 8px;
     }
 
