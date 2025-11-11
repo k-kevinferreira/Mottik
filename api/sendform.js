@@ -11,7 +11,7 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: "Preencha todos os campos obrigatórios." });
     }
 
-    // ...
+
     try {
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
@@ -21,7 +21,7 @@ export default async function handler(req, res) {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASS
             },
-            // ESSA É A LINHA QUE DEVE SER ADICIONADA:
+            
             tls: {
                 rejectUnauthorized: false
             }
