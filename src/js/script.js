@@ -109,7 +109,6 @@ closeMenu.addEventListener("click", () => {
     mobileNav.classList.remove("open");
 });
 
-// Fecha o menu ao clicar em um link
 document.querySelectorAll(".mobile-nav a").forEach(link => {
     link.addEventListener("click", () => {
         mobileNav.classList.remove("open");
@@ -118,11 +117,6 @@ document.querySelectorAll(".mobile-nav a").forEach(link => {
 
 /* ------------- Lógica de Envio do Formulário -------------------
    ----------------------------------------------------------------- */
-
-/* ------------- Lógica de Envio do Formulário (FINAL) -------------------
-------------------------------------------------------------------------- */
-
-// Remova o DOMContentLoaded aqui e deixe-o no corpo principal do arquivo.
 const form = document.getElementById('form-orcamento'); 
 const submitButton = form ? form.querySelector('.btn-mottik-enviar') : null; 
 
@@ -152,9 +146,13 @@ if (form && submitButton) {
             });
 
             if (response.ok) {
-                alert('Orçamento enviado com sucesso! Obrigado pelo contato.');
-                
-                // Tenta fechar o modal
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Enviado!',
+                    text: 'Orçamento enviado com sucesso! Obrigado pelo contato.'
+                });
+
                 const modalElement = document.getElementById('modalOrcamento');
                 if (window.bootstrap && modalElement) {
                     const modal = bootstrap.Modal.getInstance(modalElement);
@@ -162,14 +160,26 @@ if (form && submitButton) {
                 }
 
                 form.reset(); 
+
             } else {
                 const errorData = await response.json();
-                alert(`Falha no envio. Erro da API: ${errorData.error || 'Erro desconhecido.'}`);
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Falha no envio',
+                    text: errorData.error || 'Erro desconhecido.'
+                });
             }
 
         } catch (error) {
             console.error('Erro de conexão ou requisição:', error);
-            alert('Erro de rede. Verifique o terminal para o erro exato.');
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Erro de Rede',
+                text: 'Erro de rede. Verifique o terminal para o erro exato.'
+            });
+
         } finally {
             submitButton.disabled = false;
             submitButton.textContent = 'Enviar Pedido';
