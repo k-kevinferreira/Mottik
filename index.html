@@ -276,13 +276,10 @@
 
                 <div class="contato-mapa">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.020585638108!2d-47.929229!3d-15.780148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d1bdf673aa3%3A0x6301b0a73de5d414!2sCongresso%20Nacional!5e0!3m2!1spt-BR!2sbr!4v1674241069724!5m2!1spt-BR!2sbr"
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d479.24101415564775!2d-47.975874094384196!3d-16.06921975243846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdistribuidora%20bob%20esponja%20valpara%C3%ADso!5e0!3m2!1spt-BR!2sbr!4v1762999664081!5m2!1spt-BR!2sbr"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
-            </div>
         </section>
 
         <!-- -------footer ----------- 
@@ -313,69 +310,69 @@
 ---------------------------------------------->
 
     <div class="modal fade" id="modalOrcamento" tabindex="-1" aria-labelledby="modalOrcamentoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalOrcamentoLabel">Solicitar Orçamento</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalOrcamentoLabel">Solicitar Orçamento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <form id="form-orcamento">
+
+                    <div class="modal-body">
+                        <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome Completo:</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone/WhatsApp:</label>
+                            <input type="tel" class="form-control" id="telefone" name="telefone"
+                                placeholder="(XX) XXXXX-XXXX" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="servico" class="form-label">Qual serviço você tem interesse?</label>
+                            <select class="form-select" id="servico" name="servico">
+                                <option selected disabled>Selecione um serviço...</option>
+                                <option value="Armarios Planejados">Armários Planejados</option>
+                                <option value="Cozinhas Sob Medida">Cozinhas Sob Medida</option>
+                                <option value="Closets & Roupeiros">Closets & Roupeiros</option>
+                                <option value="Home Offices">Home Offices</option>
+                                <option value="Estantes & Bibliotecas">Estantes & Bibliotecas</option>
+                                <option value="Design Corporativo">Design Corporativo</option>
+                                <option value="Outro">Outro (especificar abaixo)</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Descreva seu projeto:</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="3"
+                                placeholder="Ex: Preciso de um armário para um quarto de casal de 3m x 4m..."></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+
+                        <button type="submit" class="btn btn-mottik-enviar">
+                            Enviar Pedido
+                        </button>
+                    </div>
+
+                </form>
+
             </div>
-
-            <form id="form-orcamento"> 
-
-                <div class="modal-body">
-                    <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
-
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome Completo:</label>
-                        <input type="text" class="form-control" id="nome" name="nome" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-mail:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="telefone" class="form-label">Telefone/WhatsApp:</label>
-                        <input type="tel" class="form-control" id="telefone" name="telefone"
-                            placeholder="(XX) XXXXX-XXXX" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="servico" class="form-label">Qual serviço você tem interesse?</label>
-                        <select class="form-select" id="servico" name="servico">
-                            <option selected disabled>Selecione um serviço...</option>
-                            <option value="Armarios Planejados">Armários Planejados</option>
-                            <option value="Cozinhas Sob Medida">Cozinhas Sob Medida</option>
-                            <option value="Closets & Roupeiros">Closets & Roupeiros</option>
-                            <option value="Home Offices">Home Offices</option>
-                            <option value="Estantes & Bibliotecas">Estantes & Bibliotecas</option>
-                            <option value="Design Corporativo">Design Corporativo</option>
-                            <option value="Outro">Outro (especificar abaixo)</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="mensagem" class="form-label">Descreva seu projeto:</label>
-                        <textarea class="form-control" id="mensagem" name="mensagem" rows="3"
-                            placeholder="Ex: Preciso de um armário para um quarto de casal de 3m x 4m..."></textarea>
-                    </div>
-
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-
-                    <button type="submit" class="btn btn-mottik-enviar">
-                        Enviar Pedido
-                    </button>
-                </div>
-
-            </form> 
-
         </div>
     </div>
-</div>
 
     <!-- modal portfolio -->
 

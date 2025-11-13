@@ -49,7 +49,6 @@ if (lightbox && mainImage) {
 
     window.closeLightbox = function(event) {
         
-        // Checa se o clique foi no fundo ('lightbox-carousel') ou no botão de fechar ('lightbox-close-btn')
         if (event && event.target.id !== 'lightbox-carousel' && event.target.id !== 'lightbox-close-btn') {
             return;
         }
@@ -65,7 +64,6 @@ if (lightbox && mainImage) {
 
         currentImageIndex += direction;
 
-        // Lógica para loop
         if (currentImageIndex < 0) {
             currentImageIndex = portfolioImages.length - 1;
         } else if (currentImageIndex >= portfolioImages.length) {
