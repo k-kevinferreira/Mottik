@@ -616,13 +616,14 @@ header {
 .link-desenvolvedor {
   color: #ffffff;
   font-weight: 500;
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .link-desenvolvedor:hover {
   color: #cccccc;
   text-decoration: none;
+  
 }
 
 /* responsividade contato */
