@@ -160,12 +160,20 @@ if (form && submitButton) {
                 form.reset(); 
 
             } else {
-                const errorData = await response.json();
+                let errorData = { error: 'Erro desconhecido.' };
+
+                try {
+                    errorData = await response.json();
+                } catch {
+                }
 
                 Swal.fire({
                     icon: 'error',
                     title: 'Falha no envio',
-                    text: errorData.error || 'Erro desconhecido.'
+                    text: [
+                        errorData.error || 'Erro desconhecido.',
+                        errorData.details ? JSON.stringify(errorData.details) : ''
+                    ].filter(Boolean).join(' Detalhes: ')
                 });
             }
 
