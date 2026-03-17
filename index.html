@@ -272,6 +272,7 @@
 
                     <a href="#" class="btn-orcamento" data-bs-toggle="modal" data-bs-target="#modalOrcamento">Solicite
                         seu Orçamento</a>
+
                 </div>
 
                 <div class="contato-mapa">
@@ -317,7 +318,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
 
-                <form id="form-orcamento">
+                <form id="form-orcamento" data-formspree-endpoint="https://formspree.io/f/mkoqqlnj"
+                    data-success-title="Orçamento enviado!"
+                    data-success-text="Recebemos seu pedido e entraremos em contato em breve."
+                    data-submit-text="Enviar Pedido" data-loading-text="Enviando...">
+                    <input type="hidden" name="_subject" value="Novo pedido de orçamento pelo site Mottik">
+                    <input type="hidden" name="origem_formulario" value="Orçamento">
 
                     <div class="modal-body">
                         <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
