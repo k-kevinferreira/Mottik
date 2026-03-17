@@ -697,9 +697,35 @@ header {
   box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.5);
 }
 
+.btn-mottik-enviar.loading {
+  opacity: 0.8;
+  cursor: wait;
+}
+
 .modal-footer .btn-secondary {
   padding: 10px 20px;
   font-weight: 500;
+}
+
+.mottik-alert {
+  border-radius: 20px;
+  border: 1px solid rgba(42, 51, 56, 0.08);
+  box-shadow: 0 20px 45px rgba(42, 51, 56, 0.18);
+}
+
+.mottik-alert-confirm {
+  background-color: var(--grafite);
+  color: var(--bege);
+  border: none;
+  border-radius: 999px;
+  padding: 12px 28px;
+  font-weight: 600;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.mottik-alert-confirm:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
 }
 
 
